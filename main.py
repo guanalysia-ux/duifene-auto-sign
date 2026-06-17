@@ -71,7 +71,7 @@ def select_tab(event):
     tab_id = tab_control.index(tab_control.select())
     text_box.delete("1.0", "end")
     if tab_id == 0:
-        text = '\n        1、打开电脑端微信，复制如下链接到文件传输助手并发送\n\n        【https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1b5650884f657981&redirect_uri=https://www.duifene.com/_FileManage/PdfView.aspx?file=https%3A%2F%2Ffs.duifene.com%2Fres%2Fr2%2Fu6106199%2F%E5%AF%B9%E5%88%86%E6%98%93%E7%99%BB%E5%BD%95_876c9d439ca68ead389c.pdf&response_type=code&scope=snsapi_userinfo&connect_redirect=1#wechat_redirect】\n\n\n        2、点击进入链接，点击微信浏览器窗口右上角三个点，点击复制链接，并把微信链接粘贴到左侧输入框。\n\n        '
+        text = '\n        1、在微信小程序中将对分易切为教师模式，复制如下链接并发送\n\n        【https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1b5650884f657981&redirect_uri=https://www.duifene.com/_FileManage/PdfView.aspx?file=https%3A%2F%2Ffs.duifene.com%2Fres%2Fr2%2Fu6106199%2F%E5%AF%B9%E5%88%86%E6%98%93%E7%99%BB%E5%BD%95_876c9d439ca68ead389c.pdf&response_type=code&scope=snsapi_userinfo&connect_redirect=1#wechat_redirect】\n\n\n        2、点击进入链接，点击微信浏览器窗口右上角三个点，点击复制链接，并把微信链接粘贴到左侧输入框。\n\n        '
         text_box.insert(tk.END, text)
         tab_frame2.pack_forget()
         tab_frame1.pack(side=tk.LEFT, fill=tk.BOTH, pady=(40, 0))
