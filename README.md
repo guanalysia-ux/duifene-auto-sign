@@ -7,20 +7,31 @@
 - 微信链接登录 / 账号密码登录
 - 自动监听课程签到活动
 - 支持签到码（4位）、二维码、定位三种签到方式
-- 可自定义提前签到秒数（倒计时）
+- 可自定义提前签到秒数
 
-## 使用
+## 下载
 
-1. 登录（微信链接或账号密码）
-2. 选择课程
-3. 点击"开始监听签到"
-4. 保持窗口运行即可自动签到
+### 方式一：Git 克隆
+```bash
+git clone https://github.com/guanalysia-ux/duifene-auto-sign.git
+cd duifene-auto-sign
+```
+
+### 方式二：下载 ZIP
+点击页面右上角绿色 **Code** 按钮 → **Download ZIP**，解压即可。
 
 ## 运行
 
-```
+```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-或直接使用打包好的 `duifene_sign.exe`。
+## 打包 exe（可选）
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed --name duifene_sign main.py
+```
+
+打包后的 exe 在 `dist/` 目录下。
